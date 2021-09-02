@@ -30,7 +30,7 @@ namespace Lab_1_lab_1
                             long.TryParse(highlightPrint, out result);
                             sum += result;
                             firstIndexPrint = userInput.Substring(0, userInput.IndexOf(highlightPrint));
-                            secondIndexPrint = userInput.Substring(highlightPrint.Length + firstIndexPrint.Length, (userInput.Length) - (highlightPrint.Length + firstIndexPrint.Length));
+                            secondIndexPrint = userInput.Substring(highlightPrint.Length + firstIndexPrint.Length);
                             Console.Write(firstIndexPrint);
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.Write(highlightPrint);
